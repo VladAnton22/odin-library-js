@@ -53,7 +53,7 @@ function displayBooks(lib) {
         }
 
         let readBtn = document.createElement('button');
-        readBtn.textContent = "Read";
+        readBtn.textContent = book.read ? "Not read" : "Read"
         readBtn.onclick = () => {
             book.toggleReadStatus();
         }
