@@ -7,10 +7,26 @@
         
     </head>
     <body>
+        <button id="openModal">Add Book</button>
+
+        <dialog id="bookModal">
+            <h2>Add a new book</h2>
+            <form id="bookForm" method="dialog">
+                <input type="text" name="title" placeholder="Title" required />
+                <input type="text" name="author" placeholder="Author" required />
+                <input type="number" name="pages" placeholder="Pages" required />
+                <label>
+                    <input type="checkbox" name="read" /> Read
+                </label>
+                <button id="cancelBtn" type="reset">Cancel</button>
+                <button type="submit">Add</button>
+            </form>
+        </dialog>
+
         <section id="library">
 
         </section>
-        
+
         <script src="library.js"></script>
     </body>
 </html>
